@@ -22,6 +22,8 @@ A cohesive, aesthetic Hyprland desktop environment themed around **TV Girl's** i
 - **Kitty:** Terminal profile matching the colorway.
 - **Dolphin & KDE:** Full Kvantum theme, `FrenchExit.colors` color scheme, and custom `Tela-circle-red` icon pack.
 - **Cava / Dunst / Fastfetch / Fish:** Matched styles and configs.
+- **Telegram Themes:** Custom themes for Android (`.attheme`) and PC (`.tdesktop-theme`) in `extras/telegram/`.
+- **Telegram Themes:** Custom themes for both Android () and Desktop () located in .
 
 ---
 
