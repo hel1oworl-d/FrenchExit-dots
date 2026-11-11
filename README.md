@@ -2,6 +2,8 @@
 
 A cohesive, aesthetic Hyprland desktop environment themed around **TV Girl's** iconic debut album *French Exit* (2014) — featuring deep graphite/black backgrounds, crimson and magenta accents, custom icons, and matched application styling.
 
+![Desktop Preview](preview.png)
+
 ---
 
 ## 🎨 Palette & Style
@@ -27,7 +29,7 @@ A cohesive, aesthetic Hyprland desktop environment themed around **TV Girl's** i
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/FrenchExit-dots.git ~/FrenchExit-dots
+git clone https://github.com/hel1oworl-d/FrenchExit-dots.git ~/FrenchExit-dots
 cd ~/FrenchExit-dots
 ```
 
