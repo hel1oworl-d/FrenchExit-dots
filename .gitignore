@@ -1,3 +1,4 @@
 *.log
 *~
 .DS_Store
+.local/share/icons/Tela-circle-red/icon-theme.cache
