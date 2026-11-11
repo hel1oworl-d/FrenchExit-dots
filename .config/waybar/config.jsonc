@@ -1,0 +1,109 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "margin-top": 4,
+    "margin-left": 8,
+    "margin-right": 8,
+    "spacing": 4,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/mpris"
+    ],
+    "modules-center": [
+        "clock",
+        "custom/cava"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "battery",
+        "hyprland/language",
+        "tray"
+    ],
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "active-only": false,
+        "disable-scroll": false,
+        "format": "{id}",
+        "persistent-workspaces": {
+            "*": [1, 2, 3, 4, 5]
+        },
+        "on-click": "activate"
+    },
+
+    "custom/mpris": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/scripts/waybar_mpris.sh",
+        "interval": 2,
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "tooltip": true
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": "󰥔  {:%H:%M:%S  •  %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "custom/cava": {
+        "format": "{}",
+        "exec": "~/.config/waybar/scripts/waybar_cava.sh",
+        "restart-interval": 1,
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁  muted",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": "󰍛 {usage}%"
+    },
+
+    "memory": {
+        "interval": 2,
+        "format": "󰘚 {percentage}%"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰂄 {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "hyprland/language": {
+        "format": "󰌌  {}",
+        "format-en": "EN",
+        "format-ru": "RU",
+        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 8
+    }
+}

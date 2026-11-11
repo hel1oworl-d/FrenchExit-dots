@@ -1,0 +1,151 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "CaskaydiaCove Nerd Font Mono", "JetBrains Mono Nerd Font", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* Common block styling — deep black background with French Exit crimson accent borders */
+#workspaces,
+#custom-mpris,
+#clock,
+#custom-cava,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#language,
+#tray {
+    background: #000000;
+    color: #e5e5e5;
+    border: 1px solid #3d1415;
+    padding: 2px 10px;
+    margin: 2px 3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.95);
+}
+
+/* Workspaces fixed static buttons */
+#workspaces {
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 2px 7px;
+    min-width: 18px;
+    color: #e5a0a0;
+    background: transparent;
+    border-bottom: 2px solid #a43536;
+    transition: all 0.15s ease-in-out;
+}
+
+#workspaces button.empty {
+    color: #552224;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button:hover {
+    color: #ff7575;
+    background: #1a0607;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: #a43536;
+    border-bottom: 2px solid #ff7575;
+    font-weight: 700;
+}
+
+#workspaces button.urgent {
+    color: #ffffff;
+    background: #dd4a4a;
+}
+
+/* MPRIS Music Track Name (Right of Workspaces) */
+#custom-mpris {
+    color: #f2d4d4;
+    font-size: 12px;
+    border-color: #601d1e;
+    padding: 2px 12px;
+}
+
+#custom-mpris.paused {
+    color: #8c5556;
+}
+
+/* Center Clock — French Exit Crimson Accent */
+#clock {
+    color: #ff9e9e;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-color: #a43536;
+    padding: 2px 14px;
+}
+
+/* Cava Audio Visualizer (Right of Clock) */
+#custom-cava {
+    color: #dd4a4a;
+    font-size: 13px;
+    padding: 2px 10px;
+    border-color: #601d1e;
+    min-width: 60px;
+}
+
+/* Modules detail */
+#pulseaudio {
+    color: #f0c0c0;
+}
+
+#pulseaudio.muted {
+    color: #552224;
+}
+
+#cpu {
+    color: #ff9999;
+}
+
+#memory {
+    color: #e88080;
+}
+
+#battery {
+    color: #f5b0b0;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ff7070;
+}
+
+#battery.warning {
+    color: #ffffff;
+    background: #4a1516;
+    border-color: #dd4a4a;
+}
+
+#battery.critical {
+    color: #ffffff;
+    background: #dd4a4a;
+    font-weight: 700;
+}
+
+#language {
+    color: #dd4a4a;
+    font-weight: bold;
+}
+
+#tray {
+    padding: 2px 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}

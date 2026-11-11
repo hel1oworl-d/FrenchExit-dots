@@ -1,0 +1,28 @@
+[general]
+framerate = 60
+autosens = 1
+bars = 0
+bar_width = 2
+bar_spacing = 1
+
+[input]
+method = pipewire
+source = auto
+
+[output]
+method = ncurses
+
+[color]
+gradient = 1
+gradient_count = 6
+gradient_color_1 = '#3D1415'
+gradient_color_2 = '#601D1E'
+gradient_color_3 = '#A43536'
+gradient_color_4 = '#C94A4D'
+gradient_color_5 = '#DD4A4A'
+gradient_color_6 = '#FF6B6D'
+
+[smoothing]
+monstercat = 1
+waves = 0
+noise_reduction = 77
